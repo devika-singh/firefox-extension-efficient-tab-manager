@@ -1,0 +1,31 @@
+
+input[type="text"], textarea {
+    background-color : #fff; 
+  }
+  
+input:active { border: 1px solid cyan; }
+input:focus { border: 1px solid blue;  }
+
+input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:-internal-autofill-previewed, textarea:-internal-autofill-selected, select:-internal-autofill-previewed, select:-internal-autofill-selected { background-color: black; }
+
+.search-bar form #searchTerm {
+  background-color: #fff;
+  color: #808080;
+  padding: 10px 1em;
+  width : 80%;
+  height : 1.5em;
+  border-radius: .25em 0 0 .25em;
+  border: 1px solid grey;
+}
+
+#searchButton {
+  height : 1.5em;
+  aspect-ratio: auto;  
+  cursor: pointer;
+
+  background: url('https://api.iconify.design/fe:search.svg?color=%23fff&height=32') no-repeat center center / 32px 32px rgba(0,0,0,0.3);
+  border: none;
+  transition: all .4s;
+}
+
+input::placeholder { color: #808080; }

@@ -4,10 +4,18 @@
     <title>Scope of Content Script Environment</title>
     <meta charset="UTF-8">
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="scope.css"/>
 </head>
 <body>
     <h1>Scope of Content Script Environment</h1>
-    <p id="page-script-para">Hola Mundos</p>
+    <p id="page-script-para">
+        <div class="search-bar">
+            <form method="get" action="" target="_self">
+                <button type="submit" id="searchButton">
+                <input type="text" id="searchTerm" name="q" placeholder="Search" />
+              </form>
+        </div>
+    </p>
     <script src="page-scripts/page-script.js"></script>
 </body>
 </html>
